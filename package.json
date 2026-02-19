@@ -1,0 +1,14 @@
+{
+    "name": "ai-negotiation-whisperer",
+    "private": true,
+    "workspaces": [
+        "apps/*"
+    ],
+    "scripts": {
+        "dev": "npm run dev --workspaces --if-present",
+        "build": "npm run build --workspaces --if-present",
+        "web:dev": "npm run dev --workspace=web",
+        "desktop:dev": "npm run dev --workspace=desktop",
+        "desktop:build": "npm run build --workspace=desktop"
+    }
+}
